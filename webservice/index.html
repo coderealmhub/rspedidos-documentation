@@ -224,20 +224,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    Install
+  </a>
+  
+    <nav class="md-nav" aria-label="Install">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#clone-project" class="md-nav__link">
     Clone project
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#configurando-htaccess-no-webservice" class="md-nav__link">
     Configurando .htaccess no webservice
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#database" class="md-nav__link">
     Database
   </a>
@@ -263,17 +271,22 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#configuracao-do-ambiente-de-desenvolvimento" class="md-nav__link">
     Configuração do ambiente de desenvolvimento
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#update-source" class="md-nav__link">
-    Update source
+  <a href="#update-source-code" class="md-nav__link">
+    Update source code
   </a>
   
 </li>
@@ -281,6 +294,13 @@
         <li class="md-nav__item">
   <a href="#guia-de-uso" class="md-nav__link">
     Guia de uso
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evolucao" class="md-nav__link">
+    Evolução
   </a>
   
 </li>
@@ -301,8 +321,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../client/" class="md-nav__link">
-        Cliente
+      <a href="../android/" class="md-nav__link">
+        App Android
       </a>
     </li>
   
@@ -316,8 +336,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../android/" class="md-nav__link">
-        App Android
+      <a href="../client/" class="md-nav__link">
+        Cliente
       </a>
     </li>
   
@@ -400,20 +420,28 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#install" class="md-nav__link">
+    Install
+  </a>
+  
+    <nav class="md-nav" aria-label="Install">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#clone-project" class="md-nav__link">
     Clone project
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#configurando-htaccess-no-webservice" class="md-nav__link">
     Configurando .htaccess no webservice
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#database" class="md-nav__link">
     Database
   </a>
@@ -439,17 +467,22 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#configuracao-do-ambiente-de-desenvolvimento" class="md-nav__link">
     Configuração do ambiente de desenvolvimento
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#update-source" class="md-nav__link">
-    Update source
+  <a href="#update-source-code" class="md-nav__link">
+    Update source code
   </a>
   
 </li>
@@ -457,6 +490,13 @@
         <li class="md-nav__item">
   <a href="#guia-de-uso" class="md-nav__link">
     Guia de uso
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evolucao" class="md-nav__link">
+    Evolução
   </a>
   
 </li>
@@ -482,13 +522,14 @@
 <li>MySQL</li>
 <li>PHPMyAdmin</li>
 </ul>
-<h2 id="clone-project">Clone project</h2>
+<h2 id="install">Install</h2>
+<h3 id="clone-project">Clone project</h3>
 <p>Clone esse repositório para o seu computador local ou servidor, diretório <code>www</code> ou <code>public_html</code>.</p>
 <pre><code>git clone https://github.com/coderealmhub/rspedidos-webservice.git
 </code></pre>
 <p>ou faça o download projeto.</p>
 <p><a href="https://github.com/coderealmhub/rspedidos-webservice/archive/main.zip">https://github.com/coderealmhub/rspedidos-webservice/archive/main.zip</a></p>
-<h2 id="configurando-htaccess-no-webservice">Configurando <code>.htaccess</code> no webservice</h2>
+<h3 id="configurando-htaccess-no-webservice">Configurando <code>.htaccess</code> no webservice</h3>
 <p>No diretório raiz do seu projeto, crie um arquivo <code>.htaccess</code> e cole o seguinte bloco de código,
 para dar permissão de escrita nos arquivos e remover <code>ìndex.php</code> da url.</p>
 <pre><code>&lt;IfModule mod_rewrite.c&gt;
@@ -503,11 +544,11 @@ para dar permissão de escrita nos arquivos e remover <code>ìndex.php</code> da
     RewriteRule ^(.*)$ index.php/$1 [L]
 &lt;/IfModule&gt;
 </code></pre>
-<h2 id="database">Database</h2>
-<h3 id="manualmente">Manualmente</h3>
+<h3 id="database">Database</h3>
+<h4 id="manualmente">Manualmente</h4>
 <p>Para configurar o banco de dados manualmente, importe o arquivo <code>.sql</code>
 que pode ser encontrado na pasta <code>database</code> para o seu banco de dados.</p>
-<h3 id="automaticamente-experimental">Automaticamente (experimental)</h3>
+<h4 id="automaticamente-experimental">Automaticamente (experimental)</h4>
 <p>Para configurar o banco de dados automaticamente use migration.</p>
 <ol>
 <li>
@@ -528,7 +569,7 @@ que pode ser encontrado na pasta <code>database</code> para o seu banco de dados
 <blockquote>
 <p>Atenção: após a migração, desative a mesma para evitar migrações por terceiros ou acidentais.</p>
 </blockquote>
-<h2 id="configuracao-do-ambiente-de-desenvolvimento">Configuração do ambiente de desenvolvimento</h2>
+<h3 id="configuracao-do-ambiente-de-desenvolvimento">Configuração do ambiente de desenvolvimento</h3>
 <p>Na raiz do seu projeto, crie um arquivo <code>.env</code> de acordo com seu ambiente, copiando conforme
 exemplifica o arquivo <code>.env.example</code> para a configuração do banco de dados e outras configurações.</p>
 <p>Exemplo: <code>.env</code>, <code>.env.development</code>, <code>.env.testing</code>, <code>.env.production</code>.</p>
@@ -538,12 +579,22 @@ DB_DATABASE      = database
 DB_USERNAME      = root
 DB_PASSWORD      = root
 </code></pre>
-<h2 id="update-source">Update source</h2>
+<h2 id="update-source-code">Update source code</h2>
 <p>Para receber atualizações da API RS Pedidos, execute a seguinte instrução:</p>
 <pre><code>git pull
 </code></pre>
 <h2 id="guia-de-uso">Guia de uso</h2>
 <p>Acesse a documentação <a href="https://documenter.getpostman.com/view/2943437/TVsygRJg">Postman</a>.</p>
+<h2 id="evolucao">Evolução</h2>
+<p>Essa API busca respeitar <a href="https://semver.org/lang/pt-BR/">SemVer</a>. Nesse sentido, mudanças compatíveis não devem gerar nova versão major.</p>
+<p>A versão da API é composta por 4 elementos: major, minor, patch e release candidate. A versão v[x]que consta no path da URL é o elemento major da versão da API. A evolução da versão se dá seguinte forma:</p>
+<ul>
+<li>Major: alterações incompatíveis, com quebra de contrato (v1.0.0 → v2.0.0)</li>
+<li>Minor: alterações compatíveis, sem quebra de contrato (v1.1.0 → v1.2.0)</li>
+<li>Patch: bugfixes, esclarecimentos às especificações, sem alterações funcionais (v1.1.1 → v1.1.2)</li>
+<li>Release candidate: versões de pré-lançamento de qualquer patch futuro, minor ou major (v1.0.0-rc.1 → v1.0.0-rc.22)</li>
+</ul>
+<p>Alterações sem quebra de contrato e esclarecimentos às especificações podem ocorrer a qualquer momento. Clientes devem estar preparados para lidar com essas mudanças sem quebrar.</p>
                 
               
               
@@ -576,13 +627,13 @@ DB_PASSWORD      = root
         </a>
       
       
-        <a href="../client/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../android/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Próximo
               </span>
-              Cliente
+              App Android
             </div>
           </div>
           <div class="md-footer__button md-icon">

@@ -199,21 +199,6 @@
 
   
   
-  
-    <li class="md-nav__item">
-      <a href="../client/" class="md-nav__link">
-        Cliente
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
     
   
   
@@ -228,6 +213,21 @@
         App Android
       </a>
       
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../client/" class="md-nav__link">
+        Cliente
+      </a>
     </li>
   
 
@@ -318,7 +318,13 @@
 <p>ou faça o download do projeto diretamente.</p>
 <p><a href="https://github.com/coderealmhub/rspedidos-android/archive/master.zip">https://github.com/coderealmhub/rspedidos-android/archive/master.zip</a></p>
 <h2 id="configuration-endpoint">Configuration Endpoint</h2>
-<p>Navegando dentro do projeto abra o pacote br.com.coderealm.rspedidos &gt;&gt;&gt; api &gt;&gt;&gt; API.java E configure o end point da aplicação para a sua própria URL Base:</p>
+<p>Navegando dentro do projeto abra o pacote <code>br.com.coderealm.rspedidos</code> &gt;&gt;&gt; <code>api</code> &gt;&gt;&gt; <code>API.java</code> e altere a URL Base:</p>
+<pre><code>public static final String URL_BASE = "https://youtdomain.com.br/rspedidos/v1/";
+</code></pre>
+<h2 id="configuration-endpoint_1">Configuration Endpoint</h2>
+<p>Navegando dentro do projeto abra o pacote <code>br.com.coderealm.rspedidos</code> &gt;&gt;&gt; <code>config</code> &gt;&gt;&gt; <code>Config.java</code> e altere SECRET_KEY_APP_CLIENT:</p>
+<pre><code>public static final String SECRET_KEY_APP_CLIENT = "you_secret_key_app_client";
+</code></pre>
 <h2 id="generating-an-apk">Generating an APK</h2>
 <p>No menu do Android Studio clique em: Build &gt;&gt; Build Bundle(s)/ APK(s) &gt;&gt; Build APK.</p>
                 
@@ -338,7 +344,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../client/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../webservice/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -347,19 +353,19 @@
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Cliente
+              Webservice
             </div>
           </div>
         </a>
       
       
-        <a href="../support/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../client/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Próximo
               </span>
-              Suporte
+              Cliente
             </div>
           </div>
           <div class="md-footer__button md-icon">
