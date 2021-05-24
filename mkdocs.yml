@@ -1,0 +1,21 @@
+site_name: RS Pedidos
+nav:
+  - Início: index.md
+  - Webservice: webservice.md
+  - App Android: android.md
+  - Cliente: client.md
+  - Suporte: support.md
+  - Erros: errors.md
+  - Changelog: changelog.md
+theme:
+  name: material
+  language: pt
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.png
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+  plugins:
+  - search:
+    lang: pt
