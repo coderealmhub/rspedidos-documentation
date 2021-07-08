@@ -670,7 +670,7 @@ DB_PASSWORD      = root
 <blockquote>
 <p>Sugestão, crie um email da seguinte forma: no-reply@your_domain.com.br</p>
 </blockquote>
-<p>Acesse o caminho <code>rspedidos &gt;&gt; application &gt;&gt; libraries</code> abra o arquivo <code>Phpmailer_lib.php</code> e configure conforme suas credênciais.</p>
+<p>Acesse o caminho <code>rspedidos &gt;&gt; application &gt;&gt; libraries</code> abra o arquivo <code>Phpmailer_lib.php</code> e configure conforme suas credenciais.</p>
 <pre><code>$mail-&gt;Host     = 'mail.your_domain.com.br';
 $mail-&gt;SMTPAuth = true;
 $mail-&gt;Username = 'no-reply@your_domain.com.br';
@@ -680,7 +680,7 @@ $mail-&gt;Port     = 465;
 
 $mail-&gt;setFrom('no-reply@your_domain.com.br', $cc_name);
 </code></pre>
-<p>Feito isso, você já está configura do para enviar emails.</p>
+<p>Feito isso, já estará configurado para enviar emails.</p>
 <h2 id="email-queue">Email Queue</h2>
 <p>Processamento de email é uma especie de fila de emails a qual seu servidor deve enviar.
 Isso é usado para enviar os emails dos pedidos dos clientes, porem, não se limita apenas a isso, você pode utilizar para enviar outro tipos de emails.</p>
