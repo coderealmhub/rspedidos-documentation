@@ -670,15 +670,11 @@ DB_PASSWORD      = root
 <blockquote>
 <p>Sugestão, crie um email da seguinte forma: no-reply@your_domain.com.br</p>
 </blockquote>
-<p>Acesse o caminho <code>rspedidos &gt;&gt; application &gt;&gt; libraries</code> abra o arquivo <code>Phpmailer_lib.php</code> e configure conforme suas credenciais.</p>
-<pre><code>$mail-&gt;Host     = 'mail.your_domain.com.br';
-$mail-&gt;SMTPAuth = true;
-$mail-&gt;Username = 'no-reply@your_domain.com.br';
-$mail-&gt;Password = 'your_email_pass';
-$mail-&gt;SMTPSecure = 'ssl';
-$mail-&gt;Port     = 465;
-
-$mail-&gt;setFrom('no-reply@your_domain.com.br', $cc_name);
+<p>Acesse o caminho seu arquivo <code>.env</code> e configure as credenciais.</p>
+<pre><code>EMAIL_HOST = mail.your_domain.com.br
+EMAIL_USER = user@your_domain.com.br
+EMAIL_PASS = your_pass
+EMAIL_PORT = 465
 </code></pre>
 <p>Feito isso, já estará configurado para enviar emails.</p>
 <h2 id="email-queue">Email Queue</h2>
